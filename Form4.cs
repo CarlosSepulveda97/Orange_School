@@ -13,9 +13,11 @@ namespace CarlosSepulveda_OrangeSchool
 {
     public partial class Form4 : Form
     {
-        public Form4()
+        public DataGridView data;
+        public Form4(DataGridView data)
         {
             InitializeComponent();
+            this.data = data;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -48,11 +50,26 @@ namespace CarlosSepulveda_OrangeSchool
 
                 col.Administradores.Add(admin);
                 col.SaveChanges();
-
+                this.Hide();
                 MessageBox.Show("Se ha guardado con exito");
+                actualizarTabla();
 
             }
 
+
+        }
+
+        private void actualizarTabla()
+        {
+            using (ColegioEntities col = new ColegioEntities())
+            {
+                IQueryable<Administradores> admin = from d in col.Administradores
+                                                    select d;
+
+                List<Administradores> listado = admin.ToList();
+
+                data.DataSource = listado;
+            }
 
         }
     }

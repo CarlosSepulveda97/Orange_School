@@ -16,3 +16,4 @@ C:\Users\carlo\source\repos\CarlosSepulveda_OrangeSchool\bin\Debug\EntityFramewo
 C:\Users\carlo\source\repos\CarlosSepulveda_OrangeSchool\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\carlo\source\repos\CarlosSepulveda_OrangeSchool\obj\Debug\CarlosSepulveda_OrangeSchool.csproj.CopyComplete
 C:\Users\carlo\source\repos\CarlosSepulveda_OrangeSchool\obj\Debug\CarlosSepulveda_OrangeSchool.Form4.resources
+C:\Users\carlo\source\repos\CarlosSepulveda_OrangeSchool\obj\Debug\CarlosSepulveda_OrangeSchool.Actualizar.resources
